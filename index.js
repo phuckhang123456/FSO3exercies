@@ -14,6 +14,7 @@ app.use(cors())
 // } 
 //the we can use the method of the app use()
 app.use(express.json())
+app.use(express.static('dist'))
 // app.use(requestLogger)
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
